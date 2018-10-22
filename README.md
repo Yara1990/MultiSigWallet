@@ -21,7 +21,7 @@ Features
 Install
 -------------
 ```
-git clone 
+git clone https://github.com/Yara1990/MultiSigWallet.git
 cd MultiSigWallet
 npm install
 npm run
