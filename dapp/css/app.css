@@ -21,9 +21,9 @@ html {
 
 body {
     padding-top: 70px;
-    background-image: url(../img/gnosis-logo.svg);
+    background-image: url(../img/logo.png);
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: center center;
     background-size: 512px;
     background-attachment: fixed;
 }

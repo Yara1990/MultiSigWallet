@@ -1,8 +1,9 @@
 Ethereum Multisignature Wallet
 ===================
 
+[![Join the chat at https://gitter.im/gnosis/MultiSigWallet](https://badges.gitter.im/gnosis/MultiSigWallet.svg)](https://gitter.im/gnosis/MultiSigWallet?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-The purpose of multisig wallets is to increase security by requiring multiple parties to agree on transactions before execution. Transactions can be executed only when confirmed by a predefined number of owners.
+The purpose of multisig wallets is to increase security by requiring multiple parties to agree on transactions before execution. Transactions can be executed only when confirmed by a predefined number of owners. A web user interface can be found [here](/dapp).
 
 Features
 -------------
@@ -15,16 +16,23 @@ Features
 - Hardware wallet support (Ledger Wallet)
 - Optional email notifications when an event is triggered or you are required to sign a transaction
 
-
-
+Being used by
+-------------
+- [Aragon](https://aragon.one/)
+- [Bancor](https://www.bancor.network/)
+- Brace
+- [District0x](https://district0x.io/)
+- [Golem](https://golem.network/)
+- [MysteriumNetwork](https://mysterium.network/)
+- [Weifund](http://weifund.io/)
+- StabL
 
 Install
 -------------
 ```
-git clone https://github.com/Yara1990/MultiSigWallet.git
+git clone https://github.com/gnosis/MultiSigWallet.git
 cd MultiSigWallet
 npm install
-npm run
 ```
 
 Test
@@ -49,16 +57,27 @@ truffle migrate <account1,account2,...,accountN> <requiredConfirmations>
 truffle migrate <account1,account2,...,accountN> <requiredConfirmations> <dailyLimit>
 ```
 
-
+Interface Releases
+------------------
+You can find binaries for OSX, Windows and Linux [here](https://github.com/gnosis/MultiSigWallet/releases)
 
 Limitations
 -------------
 This implementation does not allow the creation of smart contracts via multisignature transactions.
 Transactions to address 0 cannot be done. Any other transaction can be done.
 
-
-Donate
+Security
 -------------
-Consider donating some ERC20 tokens:
-0xA8112AC2f02FA71f737929D18671B72E8609B78d
+All contracts are WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
+Deployed instances with significant funds
+-------------
+- Aragon [0xcafe1a77e84698c83ca8931f54a755176ef75f2c](https://etherscan.io/address/0xcafe1a77e84698c83ca8931f54a755176ef75f2c)
+- Bancor [0x5894110995b8c8401bd38262ba0c8ee41d4e4658](https://etherscan.io/address/0x5894110995b8c8401bd38262ba0c8ee41d4e4658)
+- Golem [0x7da82c7ab4771ff031b66538d2fb9b0b047f6cf9](https://etherscan.io/address/0x7da82c7ab4771ff031b66538d2fb9b0b047f6cf9)
+- MysteriumDev [0x7e6614722614e434c4df9901bab31e466ba12fa4](https://etherscan.io/address/0x7e6614722614e434c4df9901bab31e466ba12fa4)
+- District0x [0xd20e4d854c71de2428e1268167753e4c7070ae68](https://etherscan.io/address/0xd20e4d854c71de2428e1268167753e4c7070ae68)
+
+License
+-------------
+[LGPL v3](./LICENSE)
